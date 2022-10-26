@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+:root{
+    --bg-color:#501f11;
+    --bg-color-w:#fefefe;
+    --text-color:#fefffe;
+    --text-color-w:#1c1b22;
+}
+html{
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+header{
+    position: absolute;
+    background: #e33d0f;
+    width: 100%;
+    padding: 15px 10px ;
+}
+header .title{
+    margin: auto;
+    width: 100%;
+    padding: 5px 15px;
+}
+header .title h4{
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #3f3f3f;
+}
+/* ==========
+main section
+=========== */
+.hero{
+    background:var(--bg-color);
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+p{
+    font-size: 18px;
+    color: #1c1b22;
+    font-weight: 500;
+    padding: 5px 10px;
+}
+
+.hero .card{
+    border-radius: 10px;
+    padding: 10px 5px;
+    width: 100%;
+    margin: auto;
+    height: auto;
+    background: #d2e129;
+    cursor: pointer;
+}
+.hero .card .card_title{
+    margin: 5px 0;
+    padding: 10px 15px;
+    text-align:start;
+
+}
+.hero .card .card_title h3{
+    padding: 0 10px;
+    font-weight: bold;
+    font-size: x-large;
+    color: #1c1b22;
+}
+.hero .card .card_info,
+.hero .card .card_download{
+    padding: 10px 15px;
+    margin: 20px 0px;
+
+}
+.hero .card .card_info .form-control{
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.hero .card .card_info .form-control .form-input{
+    width: 100%;
+    height: 3rem;
+    border: none;
+    margin: auto;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    background: var(--bg-color);
+
+}
+.hero .card .card_info .form-control select.form-input{
+    cursor: pointer;
+}
+.hero .card .card_info .form-control .form-input:focus{
+    outline: none;
+}
+.hero .card .hr{
+    height: 2px;
+    width: 80%;
+    background: var(--bg-color);
+    align-self: center;
+    text-align: center;
+    margin: auto;
+
+}
+.card_download{
+    display: block;
+    margin: auto;
+}
+.card_download .card_body{
+    margin: auto;
+    display: flex;
+    margin-bottom: 10px;
+}
+.card_download .card_body img{
+    margin: auto;
+}
+
+.btn{
+    display: inline-block;
+    padding: 10px 15px;
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    cursor: pointer;
+    color:var(--text-color-w);
+    border: none;
+    border-radius: 10px;
+    background: var(--bg-color-w);
+    transition: all .5s ease-in-out;
+}
+.btn:hover{
+    background: var(--bg-color);
+    color: var(--text-color);
+}

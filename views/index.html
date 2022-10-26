@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css link -->
+    <link href="../assets/style.css" rel="stylesheet" />
+    
+    <title>QR Code Generator</title>
+</head>
+
+<body>
+    <header>
+        <div class="title">
+            <h4>Code Generator</h4>
+        </div>
+    </header>
+    <main class="hero">
+        <div class="container">
+            <div class="card" id="card">
+                <div class="card_title">
+                    <h3>Qr Code</h3>
+                    <p>Enter url and the size to Generate the Qr Code and<br> download the image</p>
+                </div>
+                <form action="">
+                    <div class="card_info">
+                        <div class="form-control">
+                            <input type="url" class="form-input" name="" id="url" placeholder="Enter Url">
+                        </div>
+                        <div class="form-control">
+                            <input type="color" class="form-input" name="" id="color">
+                        </div>
+                        <div class="form-control">
+                            <select type="text" class="form-input" name="" id="size" required>
+                                <option value="100">100 x 100</option>
+                                <option value="200">200 x 200</option>
+                                <option value="300">300 x 300</option>
+                                <option value="400">400 x 400</option>
+                                <option value="500">500 x 500</option>
+                                <option value="600">600 x 600</option>
+                                <option value="700">700 x 700</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn" onGenerateSubmit()>Generate Code</button>
+                    </div>
+                </form>
+                <!-- Generated Qr code  -->
+                <div class="hr"></div>
+                <div class="card_download" id="generated">
+                    <div class="card_body" id="qrcode">
+                        <!-- qr code img here -->
+                    </div>
+                    <!-- download btn here -->
+                </div>
+            </div>
+        </div>
+
+    </main>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
+    integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+</script>
+<!-- qrcode js link -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script> -->
+<script src="../assets/main.js"></script>
+
+</html>
